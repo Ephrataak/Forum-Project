@@ -6,13 +6,13 @@ var connection = mysql.createPool({
   database: process.env.MYSQL_DB,
 });
 connection.getConnection(function (err, connection) {
-  console.log("connected with the database!");
+  console.log("connected to the database!");
 });
 const table_registration = `CREATE TABLE if not exists registration(
   user_id int auto_increment,
   user_name VARCHAR(255) not null,
   user_email VARCHAR(255) not null,
-  pass VARCHAR(255) not null,
+  user_password VARCHAR(255) not null,
   PRIMARY KEY(user_id)
   )`;
 const table_profile = `CREATE TABLE if not exists profile(
@@ -26,7 +26,7 @@ const table_profile = `CREATE TABLE if not exists profile(
 const table_answer = `CREATE TABLE if not exists answer(
   answer_id int auto_increment,
   answer varchar(500) not null,
-  answer_code_bi varchar(255) not null,
+  answer_code_block varchar(255) not null,
   user_id int not null,
   question_id int not null,
   PRIMARY KEY(answer_id),
