@@ -1,0 +1,42 @@
+.header{
+    box-shadow: 0 2px 4px rgb(81 107 152 / 16%);
+        width: 100%;
+        background: #fff;
+        display: flex;
+}
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.header__right{
+    display: flex;
+    justify-content: space-between;
+        font-size: 15px;
+            font-weight: 400;
+            line-height: 26px;
+            overflow-x: hidden;
+            color: #62626f;
+            margin: 0 0 0 160.54px;
+            padding: 15px;
+}
+.logo{
+    width: auto;
+        margin: 0 60px 0 --15px;
+        float: left;
+        padding: 15px;
+}
+.home{
+    padding: 10px 12px;
+}
+.howitworks{
+    padding: 10px 15px;
+    font: 15px;
+}
+.signin{
+    padding: 8px 15px;
+    background-color: #516cf0;
+    border: none;
+    font: 15px;
+   color: #fff;
+}

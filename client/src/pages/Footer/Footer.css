@@ -1,0 +1,15 @@
+.footer{
+    background-color: #3b455a;
+    padding: 60px 0 40px 0;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+.bolds{
+    font-weight: 500;
+    
+}
+.lighter{
+    font-weight: lighter;
+    color: wh;
+}

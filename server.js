@@ -7,7 +7,7 @@ const pool = require("./Server/configure/database")
 const userRouter = require("./Server/api/users/user.router")
 
 app.use(cors());
-app.use(express.urlencoded({ extended: true }));//data from front end
+app.use(express.urlencoded({ extended: true })); //data from front end
 app.use(express.json());
 app.use("/api/users", userRouter);
 
